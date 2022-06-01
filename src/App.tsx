@@ -1,6 +1,7 @@
 // Leer notas debajo del código para más info
 import { useEffect, useState } from 'react'
 import './App.css';
+import Form from './components/Form';
 import List from './components/List';
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
     <div className="App">
       <h1>Diloes subs</h1>
       <List subs={subs} />
+      <Form />
     </div>
   )
 }
