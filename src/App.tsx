@@ -3,15 +3,9 @@ import { useEffect, useState } from 'react'
 import './App.css';
 import Form from './components/Form';
 import List from './components/List';
+import { Sub } from './types'
 
 function App() {
-
-  interface Sub {
-    nick: string
-    avatar: string
-    subMonths: number
-    description?: string
-  }
 
   // Para no poner directamente useState<Array<Sub>>([]) o useState<Sub[]>([])
   interface AppState {
